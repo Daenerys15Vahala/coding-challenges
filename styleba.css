@@ -1,0 +1,35 @@
+.title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "aside content"
+    "footer footer";
+  background-color: #e6ccff;
+  border-radius: 5%;
+  padding: 10px;
+}
+
+.container > div {
+  padding: 8px;
+}
+
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+}
+
+.container > aside.menu {
+  padding: 15px;
+}
+
+.container > menu > list {
+  text-decoration: none;
+}
+.container > div.content {
+  grid-area: content;
+}
